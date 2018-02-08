@@ -17,10 +17,6 @@ Below is an example of what a complete solution could potentially look like (the
 
 ### Installation
 
-You can either work on this app on your local machine on in the cloud.
-
-#### Local Machine Development
-
 You should fork this repo ([see this for helpful documentation on how to fork](https://help.github.com/articles/fork-a-repo/)) and work on your changes on your fork.
 
 Once you have properly forked the repo you can clone it and get it on your local machine. Then you can install the dependencies as shown:
@@ -35,10 +31,6 @@ You can then start the app:
 ```
 yarn start # or npm start
 ```
-
-#### Cloud
-
-You can also work on the app using [CodeSandbox](https://codesandbox.io)
 
 ### App Structure
 
