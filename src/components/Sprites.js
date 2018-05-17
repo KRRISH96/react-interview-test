@@ -25,6 +25,7 @@ class Sprites extends Component {
     const sprites = Object.values(reqSpriteData);
     //filtering out sprites that has a value of null
     const availableSprites = sprites.filter(sprite => sprite !== null );
+    //if request for pokemon failed error message will be displayed
     if(reqSpriteData.length===0) {
       return (
         <Container>
