@@ -19,16 +19,16 @@ class Home extends Component {
   }
   render() {
     return (
-      <Grid>
+        <Grid>
         {this.state.pokemon.map((poke, i) => (
           <Link to={`/${poke.name}`} key={poke.name}>
           <Card colorIndex={Math.floor(i / 3) % 3}>
-            <img src={poke.sprites.front_default} alt={poke.name} />
-            {poke.name[0].toUpperCase()+poke.name.slice(1)}
+          <img src={poke.sprites.front_default} alt={poke.name} />
+          {poke.name[0].toUpperCase()+poke.name.slice(1)}
           </Card>
           </Link>
         ))}
-      </Grid>
+        </Grid>
     );
   }
 }

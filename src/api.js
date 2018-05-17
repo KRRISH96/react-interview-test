@@ -16,7 +16,6 @@ export function getPokeData() {
 }
 
 //exports data of required pokemon which is called with name as its parameter
- export async function getReqPokeData(pokemon) {
-  const pokeData = await getPokeData();
-  return pokeData.filter(poke => poke.name === pokemon);
+export function getReqPokeData(pokemon) {
+  return Dex.resource(`/api/v2/pokemon/${pokemon}`)
 }

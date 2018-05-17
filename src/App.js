@@ -6,13 +6,12 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
-    console.log();
     return (
       <Router>
         <div>
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/:pokeId' component={Sprites} />
+            <Route path='/:pokeName' component={Sprites} />
           </Switch>
         </div>
       </Router>
